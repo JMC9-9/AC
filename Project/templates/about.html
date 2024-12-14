@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Randomness</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: justify; /* Ensures paragraphs are justified */
+            margin-bottom: 15px;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #00bcd4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Science of Quantum Randomness</h1>
+        <p>
+            Quantum randomness arises from the fundamental principles of quantum mechanics, where particles like electrons and photons behave in ways that are inherently unpredictable. Unlike classical randomness, which is often the result of complex deterministic processes (e.g., rolling a dice or shuffling cards), quantum randomness is truly random and cannot be predicted, even with complete knowledge of the system.
+        </p>
+        <p>
+            This unpredictability is governed by the <strong>Heisenberg Uncertainty Principle</strong>, which states that certain pairs of physical properties, such as position and momentum, cannot be simultaneously measured to arbitrary precision. As a result, the outcomes of quantum measurements, such as the spin of an electron or the decay of a radioactive atom, are entirely random.
+        </p>
+        <p>
+            In modern computing, quantum randomness is often utilized through <strong>quantum random number generators (QRNGs)</strong>. These devices harness quantum phenomena like the behavior of photons or electrons to generate sequences of numbers that are guaranteed to be free of predictable patterns. QRNGs are critical in fields like cryptography, simulations, and secure communications.
+        </p>
+        <p>
+            While this web-based application simulates randomness using computational entropy (e.g., system-level entropy the computer's operating system), it draws inspiration from the principles of quantum randomness to emphasize the importance of true unpredictability in modern technology and science.
+        </p>
+        <p>
+            By exploring quantum randomness, we gain insights into the deeper workings of the universe and open doors to advancements in secure computing, artificial intelligence, and beyond.
+        </p>
+        <a href="{{ url_for('register') }}">Get Started</a>
+    </div>
+</body>
+</html>
+

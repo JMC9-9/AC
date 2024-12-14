@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <title>Roll Statistics</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Roll Statistics</h2>
+        <ul>
+            <li>Total Rolls: {{ total_rolls }}</li>
+            <li>Highest Roll: {{ highest_roll }}</li>
+            <li>Lowest Roll: {{ lowest_roll }}</li>
+            <li>Average Roll: {% if average_roll %}{{ average_roll }}{% else %}No rolls yet{% endif %}</li>
+            <li>Last Updated: {{ last_updated }}</li>
+        </ul>
+        <a href="{{ url_for('history', username=username) }}">Back to History</a> |
+        <a href="{{ url_for('roll', username=username) }}">Back to Roll Page</a> |
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+</body>
+</html>
+

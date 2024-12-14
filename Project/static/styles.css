@@ -1,0 +1,142 @@
+body {
+    font-family: 'DM Mono', monospace;
+    margin: 0;
+    padding: 0;
+    color: hsl(0, 0%, 100%); /* Default bright text color */
+    background-color: #1a1a1a; /* Dark background for better contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the body covers the full viewport height */
+}
+
+/* Container Styling */
+.container {
+    width: 90%; /* Responsive width */
+    max-width: 500px; /* Maximum width to avoid excessive stretching */
+    padding: 20px;
+    margin: 20px auto; /* Centered horizontally */
+    background: #2b2b2b; /* Slightly darker grey for the container */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    text-align: center; /* Center content */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+}
+
+/* Hover Effect for Container */
+.container:hover {
+    border-color: #a8f6c3; /* Border highlight on hover */
+}
+
+/* Header Styling */
+h2 {
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 100%); /* Bright text color */
+    font-size: 1.8rem; /* Responsive font size */
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Uniform spacing */
+    margin: 20px 0; /* Added vertical spacing above and below the form */
+}
+
+/* Input Fields */
+input {
+    padding: 12px;
+    font-size: 16px;
+    color: hsl(0, 0%, 70%); /* Neutral text color */
+    background-color: hsl(0, 0%, 20%); /* Dark input background */
+    border: 1px solid #535353; /* Subtle border */
+    border-radius: 5px; /* Light rounding for modern look */
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+input:focus {
+    border-color: #a8f6c3; /* Focus state */
+}
+
+/* Buttons */
+button {
+    padding: 12px;
+    background: #34c759; /* Green accent */
+    color: hsl(0, 0%, 100%); /* Bright text */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Light rounding */
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.2s ease;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+button:hover {
+    background: #28a745; /* Darker green on hover */
+}
+
+/* Links */
+a {
+    margin: 0 5px; /* Horizontal spacing between links */
+    color: #17a2b8; /* Cyan link color */
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Additional spacing for the container elements */
+.container > a {
+    display: inline-block;
+    margin-top: 15px; /* Space above links */
+    margin-bottom: 5px; /* Space below links */
+}
+
+/* Flash Message */
+.flash {
+    color: #ff073a; /* Bright pink/red for alerts */
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* List Styling */
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Align text for better readability */
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* Accessibility */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Adapt to smaller screens */
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+

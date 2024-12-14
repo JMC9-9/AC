@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <title>Roll History</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Roll History</h2>
+        <ul>
+            {% for roll in rolls %}
+                <li>
+                    Roll: {{ roll['roll_result'] }}, 
+                    Timestamp: {{ roll['timestamp'] }} 
+                    <form method="POST" action="{{ url_for('delete_roll', username=username, roll_id=roll['id']) }}" style="display:inline;">
+                        <button type="submit">Delete</button>
+                    </form>
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="{{ url_for('statistics', username=username) }}">View Statistics</a> |
+        <a href="{{ url_for('roll', username=username) }}">Back to Roll Page</a> |
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+</body>
+</html>
+
+
